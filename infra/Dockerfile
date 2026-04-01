@@ -1,13 +1,11 @@
-# Build stage
-FROM node:20-alpine as build-stage
-WORKDIR /app
-COPY package*.json ./
-RUN npm install
-COPY . .
-RUN npm run build
+FROM nginx:alpine
 
-# Production stage
-FROM nginx:stable-alpine as production-stage
-COPY --from=build-stage /app/dist /usr/share/nginx/html
+# Copy the static files into the Nginx public directory
+COPY index.html /usr/share/nginx/html/index.html
+COPY assets /usr/share/nginx/html/assets
+
+# Expose port 80
 EXPOSE 80
+
+# The default command for nginx:alpine is to start the server
 CMD ["nginx", "-g", "daemon off;"]

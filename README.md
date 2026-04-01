@@ -1,47 +1,29 @@
 # Storymate Landing Page
 
-A React, Vite, and Tailwind CSS landing page for Storymate, an AI-powered children's storybook creator.
+This is a high-quality, image-heavy landing page for **Storymate**, a children's storybook creator AI tool.
 
-## Features
-- **Responsive Design:** Optimized for mobile, tablet, and desktop.
-- **Storybook Feel:** Soft pastels, rounded corners, and playful typography.
-- **Interactive Animations:** Powered by Framer Motion.
-- **Clean Structure:** Modular components for easy maintenance.
+## Theme
+- **Storybook Feel**: Rounded corners, playful fonts (Fredoka One, Quicksand), and soft pastel backgrounds.
+- **Imagery**: High-quality cartoony and cute images from Unsplash to evoke a magical atmosphere.
+- **Layout**: Mobile-responsive, sections for Hero, How it Works, Featured Stories, and a Call to Action.
 
-## Tech Stack
-- React 18
-- Vite
-- Tailwind CSS
-- Lucide Icons
-- Framer Motion
+## Files
+- `index.html`: Contains the structure, styling (via Tailwind CSS), and content.
 
-## Getting Started
+## How to Deploy
+1. **GitHub**:
+   - Clone the repository: `git clone https://github.com/granthooks/storymate-test.git`
+   - Copy `index.html` into the repository.
+   - Commit and push:
+     ```bash
+     git add index.html
+     git commit -m "Add Storymate landing page"
+     git push origin main
+     ```
+2. **Vercel / Netlify**: 
+   - You can drag and drop this folder or connect the GitHub repo for automatic deployment.
+3. **Coolify**:
+   - Use the `auto-deploy-to-coolify` skill if configured for this project.
 
-### Prerequisites
-- Node.js (v18+)
-- npm or yarn
-
-### Installation
-1.  Navigate to the project root.
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-
-### Development
-Start the development server:
-```bash
-npm run dev
-```
-
-### Build
-Generate the production build:
-```bash
-npm run build
-```
-
-## Deployment
-This project includes a `Dockerfile` for easy deployment to platforms like Coolify or any Docker-compatible hosting.
-
----
-*Built by CodeBot*
+## Local Preview
+Simply open `index.html` in any web browser.
